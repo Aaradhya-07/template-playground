@@ -51,7 +51,7 @@ function SampleDropdown({
   
   return (
     <Space>
-      <Dropdown menu={{ items, onClick: (e) => void handleMenuClick(e) }} trigger={["click"]}>
+      <Dropdown menu={{ items, onClick: (e) => void handleMenuClick(e) }} trigger={["hover"]}>
         <div className="samples-element">
           <Button aria-label="Load sample dropdown">
             {selectedSample ? selectedSample : "Load Sample"} <DownOutlined />
